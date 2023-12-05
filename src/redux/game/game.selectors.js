@@ -1,0 +1,14 @@
+export const selectTheme = state => state.game.theme;
+export const selectIsInGame = state => state.game.isInGame;
+export const selectvalueTimer = state => state.game.valueTimer;
+export const selectGameMode = state => state.game.gameMode;
+export const selectTimeMode = state => state.game.timeMode;
+export const selectDataGame = state => state.game.dataGame;
+export const selectNumberOfLevel = state => state.game.numberOfLevel;
+export const selecttotalResult = state => state.game.totalResult;
+export const selectWords = state => state.game.words;
+export const selectAnswer = state => state.game.answer;
+export const selectLastResoult = state => state.game.lastResult;
+export const selectIsColorBlind = state => state.game.isColorBlind;
+export const selectLastLocation = state => state.game.lastLocation;
+export const selectGameHistory = state => state.game.gameHistory;

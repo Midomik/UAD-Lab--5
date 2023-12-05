@@ -1,0 +1,54 @@
+.main_container_results {
+  margin: 20px;
+  padding: 0 10px;
+  background-color: rgb(95, 96, 119, 0.2);
+  height: 80vh;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.history_list {
+  list-style: none;
+  padding: 0;
+}
+
+.history_item {
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.index_result {
+  font-weight: bold;
+  color: #0f0e0e;
+  font-size: 20px;
+}
+
+.true_result {
+  display: flex;
+  justify-content: space-between;
+  color: green;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.correct_prev_title {
+  color: black;
+}
+
+.false_result {
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  font-size: 20px;
+  margin: 0;
+}
+
+.incorrect_prev_title {
+  margin-right: 10px;
+  color: black;
+}

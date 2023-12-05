@@ -1,0 +1,21 @@
+.burger_menu_container {
+  padding-top: 10px;
+}
+
+.burger_menu {
+  margin-left: 85%;
+}
+
+.back_link {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: rgb(185, 177, 177);
+
+  border: 2px solid transparent;
+
+  max-width: 100px;
+}
