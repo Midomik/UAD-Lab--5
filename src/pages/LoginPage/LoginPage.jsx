@@ -2,7 +2,7 @@ import React from 'react';
 import css from './LoginPage.module.css';
 import { useDispatch } from 'react-redux';
 import { loginThunk } from 'redux/auth/auth.reducer';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
