@@ -20,7 +20,6 @@ export const loginThunk = createAsyncThunk(
       console.log(data);
       return data;
     } catch (error) {
-      console.log('sadsadsad');
       console.log(error.request.status);
       return thunkApi.rejectWithValue(error.request.status);
     }
@@ -156,11 +155,11 @@ const AuthSlice = createSlice({
         (state, { payload }) => {
           state.isLoading = false;
           state.error = payload;
-          const err =
-            payload === 400 ? 'Error: Invalid credentials!' : 'Server Error!';
-          toast.error(`${err} `, {
-            position: toast.POSITION.TOP_CENTER,
-          });
+          if (payload === 400) {
+            toast.error(`Error: Invalid credentials!`, {
+              position: toast.POSITION.TOP_CENTER,
+            });
+          }
         }
       );
   },
