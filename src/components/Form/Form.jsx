@@ -65,7 +65,7 @@ export const Form = () => {
 
   const resetForm = e => {
     e.currentTarget.elements.name.value = '';
-    e.currentTarget.elements.number.value = '';
+    setNumber('');
   };
 
   return (
