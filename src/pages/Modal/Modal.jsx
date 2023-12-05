@@ -27,6 +27,7 @@ const Modal = ({ children }) => {
       </Link>
     );
   }
+
   return (
     <div className={css.burger_menu_container}>
       <ToastNotify />
