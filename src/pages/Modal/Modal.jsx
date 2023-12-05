@@ -1,6 +1,6 @@
 import { IconBurger } from 'components/assets/sprite';
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import css from './Modal.module.css';
 import { useSelector } from 'react-redux';
 import { selectLastLocation } from 'redux/game/game.selectors';
@@ -32,6 +32,7 @@ const Modal = ({ children }) => {
     <div className={css.burger_menu_container}>
       <ToastNotify />
       {isAuth && content}
+      
 
       <main>{children}</main>
     </div>
