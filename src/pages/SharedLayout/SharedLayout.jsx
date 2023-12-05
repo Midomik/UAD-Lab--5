@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { selectAuthenticated } from 'redux/auth/auth.selectors';
 
 import { UserMenu } from 'components/UserMenu/UserMenu';
-import { ToastNotify } from 'components/ToastNotify/ToastNotify';
+
 import SwichTheme from 'components/SwichTheme/SwichTheme';
 
 export const SharedLayout = ({ children }) => {
